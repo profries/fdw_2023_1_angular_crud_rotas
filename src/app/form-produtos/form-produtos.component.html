@@ -1,0 +1,26 @@
+<h3>{{titulo}}</h3>
+
+<div>
+    <label for="id">ID:</label>
+    <input [(ngModel)]= "produto.id" id="id">
+    <br />
+
+    <label for="nome">NOME:</label>
+    <input [(ngModel)]= "produto.nome" d="nome">
+    <br />
+
+    <label for="marca">MARCA:</label>
+    <input [(ngModel)]= "produto.marca" id="marca">
+    <br />
+
+    <label for="preco">PRECO:</label>
+    <input type="number" [(ngModel)]= "produto.preco" id="preco">
+    <br />
+
+    <label for="validade">VALIDADE:</label>
+    <input type="date" [(ngModel)]= "produto.validade" id="validade">
+    <br />
+
+    <button (click)="salvar()">{{botaoAcao}}</button>
+    <button (click)="cancelar()">Cancelar</button>
+</div>
